@@ -1,6 +1,4 @@
-
 /* GLOBAL STYLES */
-
 * {
   box-sizing: border-box;
 }
@@ -15,76 +13,108 @@ html, body {
 */
 }
 
-
-
 /* HERO STYLES */
-
 .hero {
   width: 100vw;
   height: 100vh;
   padding: .5vh 0;
   /* Flexbox */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: top; */
-  /* Text styles*/
-  /* text-align: center; */
+  display: flex;
   /* Background styles */
   background-image: url(images/heroimage.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
 }
 
- .hero-inner {
-  width: 100%
-  height: 100vh;
-  /* border: 2px solid pink; */
-
+.hero-inner {
+  width: 100% height: 100vh;
 }
+
 .main-title {
   color: #FFF;
   font-family: 'Dancing Script', cursive;
   font-weight: 900;
   font-size: 6vw;
-  /* width: 50%; */
-  /* border: 2px solid pink; */
 }
 
 .botanical {
   padding: .5em 0 0 1em;
-
 }
+
 .creations {
   padding: 0 0 0 2.5em;
 }
 
-.primary-content {
-  margin: 0;
-  padding: 0;
+.welcome-content {
+  /* margin: 0;
+  padding: 0; */
+  padding: 10%;
+  margin: 0 auto;
   background-color: #316B83;
-
 }
-.welcome-intro {
+
+.welcome-background {
+  background-color: black;
+  height: auto;
+}
+
+.welcome-text {
   margin: 0;
   padding: 2em 10em 2em 10em;
-  /* max-width: 750px; */
   text-align: center;
   font-family: 'Nothing You Could Do', cursive;
   font-size: 1.6rem;
 }
 
-.welcome-intro h2 {
+.welcome-text h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  color: grey;
+}
+
+.welcome-text p {
+  color: grey;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.col {
+  width: 50%;
+}
+
+.cta {
+  background-color: black;
+}
+
+.cta-image {
+  max-width: 100%;
+  height: auto;
+  margin: 10% auto;
+  opacity: 0.5;
+}
+
+.img-text {
+  position: relative;
+  text-align: center;
+  color: #fff;
   font-family: 'Dancing Script', cursive;
   font-size: 4rem;
 }
 
-.cta {
-  width: 100vw;
-}
-.cta-image {
-border: 2px solid pink;
-height: 250px;
+.cta-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
