@@ -36,11 +36,25 @@ img {
   margin-bottom: 3em;
 }
 
-.subtitle span {
+.sw {
   font-weight: 700;
   display: block;
   font-size: 2.5rem;
 }
+
+
+.mobile-hero-text {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .mobile-hero-text {display: inline-block;}
+  .desktop-hero-text {display: none;}
+}
+
+
+
+
 
 /* media queries arbitrary- just based off tutorial */
 @media (min-width:55rem) {
