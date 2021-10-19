@@ -1,0 +1,134 @@
+/*
+font-family: 'Dancing Script', cursive;
+
+font-family: 'Nothing You Could Do', cursive;
+
+font-family: 'Raleway', sans-serif; */
+
+/* GLOBAL STYLES */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* TYPOGRAPHY */
+
+.subtitle {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 3em;
+}
+
+.subtitle span {
+  font-weight: 700;
+  display: block;
+  font-size: 2.5rem;
+}
+
+/* media queries arbitrary- just based off tutorial */
+@media (min-width:55rem) {
+  .subtitle {
+    font-size: 6rem;
+  }
+}
+
+@media (min-width:55rem) {
+  .subtitle span {
+    font-size: 6rem;
+  }
+}
+
+/* BUTTONS */
+
+.button {
+  display: inline-block;
+  font-size: 1.5rem;
+  /* font size changes button size */
+  text-decoration: none;
+  text-transform: uppercase;
+  border-left-width: 2px;
+  border-style: solid;
+  padding: .5em 1.75em;
+}
+
+.button-accent {
+  color: #F43B86;
+  border-color: #F43B86;
+  /* font-weight: 700; */
+}
+
+.button-accent:hover,
+.button-accent:focus {
+  background: #F43B86;
+  color: #232323;
+}
+
+/* HEADER */
+
+header {
+  position: absolute;
+  width: 100%;
+  margin-top: 1em;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 1em;
+}
+
+nav a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8rem;
+  padding: .5em;
+  /* background: pink; pad out for easy clicking */
+  color: #FFF;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #DDD;
+}
+
+/* HOME-HERO */
+
+.home-hero {
+  background-image: url(images/heroimage.jpg);
+  padding: 10em 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #FFF;
+
+
+
+}
