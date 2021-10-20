@@ -11,8 +11,12 @@ font-family: 'Raleway', sans-serif; */
   box-sizing: border-box;
 }
 
+
+
 body {
+  padding: 0;
   margin: 0;
+  font-size: 16px;
   text-align: center;
   font-family: 'Raleway', sans-serif;
 }
@@ -47,6 +51,21 @@ img {
   display: none;
 }
 
+.botanical {
+  padding: 1.5em 6.5em 0 0;
+}
+
+.creations {
+  padding: 4em 3em 0 1.5em;
+}
+
+.desktop-hero-text {
+  font-weight: 900;
+  font-size: 8.5vw;
+
+
+}
+
 @media (max-width: 1200px) {
   .mobile-hero-text {display: inline-block;}
   .desktop-hero-text {display: none;}
@@ -55,19 +74,18 @@ img {
 
 
 
-
-/* media queries arbitrary- just based off tutorial */
+/* below media queries arbitrary- based off tutorial */
 @media (min-width:55rem) {
   .subtitle {
     font-size: 6rem;
   }
 }
-
+/*
 @media (min-width:55rem) {
   .subtitle span {
     font-size: 6rem;
   }
-}
+} */
 
 /* BUTTONS */
 
@@ -92,6 +110,11 @@ img {
 .button-accent:focus {
   background: #F43B86;
   color: #232323;
+}
+
+/* why 60rem- grabbed from tutorial, be intentional */
+@media (min-width: 60rem) {
+  .button {display: none;}
 }
 
 /* HEADER */
@@ -142,7 +165,11 @@ nav a:focus {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #FFF;
+}
 
-
-
+@media (min-width: 60rem) {
+  .home-hero {
+    height: 100vh;
+    padding-top: 25vh;
+  }
 }
