@@ -33,6 +33,19 @@ img {
 
 /* TYPOGRAPHY */
 
+.home-about-h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #F43B86;
+  margin-top: 0;
+}
+
+.home-about-para {
+  font-family: 'Raleway', sans-serif;
+  color: #FFF;
+}
+
 .subtitle {
   font-family: 'Dancing Script', cursive;
   font-size: 2rem;
@@ -49,6 +62,7 @@ img {
 
 .mobile-hero-text {
   display: none;
+  margin: 3em auto;
 }
 
 .botanical {
@@ -122,7 +136,7 @@ img {
 header {
   position: absolute;
   width: 100%;
-  margin-top: 1em;
+  margin: 1em;
 }
 
 nav ul {
@@ -152,6 +166,17 @@ nav a:focus {
   color: #DDD;
 }
 
+@media (min-width:60rem) {
+  .logo {
+    float: left;
+  }
+
+  nav {
+    float: right;
+  }
+}
+
+
 /* HOME-HERO */
 
 .home-hero {
@@ -161,7 +186,7 @@ nav a:focus {
   height: 100vh;
   display: flex;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #FFF;
@@ -172,4 +197,15 @@ nav a:focus {
     height: 100vh;
     padding-top: 25vh;
   }
+}
+
+/* HOME-ABOUT */
+
+.home-about-textbox {
+  background-color: #232323;
+  padding: 4em;
+  width: 100vw;
+  margin-left: -2.5%;
+  outline: 2px solid #F43B86;
+  outline-offset: -2.5em;
 }
