@@ -234,3 +234,11 @@ nav a:focus {
     top: .17em;
   }
 }
+
+@media (min-width: 60rem) {
+  .home-about-h1 {
+    font-size: 3.4rem;
+    padding: 0 .3em;
+    top: .01em;
+  }
+}
