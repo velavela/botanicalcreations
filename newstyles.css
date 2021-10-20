@@ -35,10 +35,25 @@ img {
 
 .home-about-h1 {
   font-family: 'Dancing Script', cursive;
-  font-size: 3rem;
+  font-size: 2.18rem;
   font-weight: 400;
   color: #F43B86;
   margin-top: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: .35em;
+  /* above line changes location of this h1 */
+  background: #232323;
+  padding: 0 .13em;
+
+}
+
+.jaf-h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #F43B86;
 }
 
 .home-about-para {
@@ -122,8 +137,9 @@ img {
 
 .button-accent:hover,
 .button-accent:focus {
-  background: #F43B86;
+  background: #F0D9FF;
   color: #232323;
+  border: #F0D9FF;
 }
 
 /* why 60rem- grabbed from tutorial, be intentional */
@@ -208,4 +224,13 @@ nav a:focus {
   margin-left: -2.5%;
   outline: 2px solid #F43B86;
   outline-offset: -2.5em;
+  position: relative;
+}
+
+@media (min-width: 25rem) {
+  .home-about-h1 {
+    font-size: 2.66rem;
+    padding: 0 .19em;
+    top: .17em;
+  }
 }
