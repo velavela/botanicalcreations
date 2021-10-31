@@ -28,6 +28,7 @@ img {
 
 .container {
   width: 95%;
+  max-width: 70em;
   margin: 0 auto;
 }
 
@@ -217,13 +218,22 @@ nav a:focus {
 
 /* HOME-ABOUT */
 
+.home-about-para {
+  margin-top: 0;
+  line-height: 1.3;
+}
+
+.home-about-para:last-of-type {
+  margin-bottom: 0;
+}
+
 .home-about-textbox {
   background-color: #232323;
   padding: 4em;
   width: 100vw;
   margin-left: -2.5%;
   outline: 2px solid #F43B86;
-  outline-offset: -2.5em;
+  outline-offset: -3em;
   position: relative;
 }
 
@@ -237,8 +247,31 @@ nav a:focus {
 
 @media (min-width: 60rem) {
   .home-about-h1 {
-    font-size: 3.4rem;
-    padding: 0 .3em;
-    top: .01em;
+    font-size: 3.3rem;
+    top: .1em;
+    left: 12.3rem;
+    transform: translateX();
+    /* padding: 0 .3em;
+    top: .01em; */
+  }
+
+  .home-about {
+    background-image: url(images/purple.png);
+    padding-bottom: 10em;
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    margin-top: 15em;
+
+  }
+
+  .home-about-textbox {
+    width: 40%;
+    margin-left: -15%;
+    padding: 5.5em;
+    top: -7em;
+    text-align: left;
+
   }
 }
