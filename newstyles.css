@@ -209,6 +209,7 @@ nav a:focus {
   color: #FFF;
 }
 
+
 @media (min-width: 60rem) {
   .home-hero {
     height: 100vh;
@@ -220,7 +221,7 @@ nav a:focus {
 
 .home-about-para {
   margin-top: 0;
-  line-height: 1.3;
+  line-height: 1.4;
 }
 
 .home-about-para:last-of-type {
@@ -237,7 +238,19 @@ nav a:focus {
   position: relative;
 }
 
-@media (min-width: 25rem) {
+
+
+@media (max-width: 25rem) {
+
+  .logo {
+    padding: 1.5em 0 .5em 0;
+  }
+
+  .home-hero {
+  
+    height: 45vh;
+}
+
   .home-about-h1 {
     font-size: 2.66rem;
     padding: 0 .19em;
@@ -245,15 +258,16 @@ nav a:focus {
   }
 }
 
+
 @media (min-width: 60rem) {
   .home-about-h1 {
     font-size: 3.3rem;
     top: .1em;
     left: 12.3rem;
     transform: translateX();
-    /* padding: 0 .3em;
-    top: .01em; */
+
   }
+
 
   .home-about {
     background-image: url(images/purple.png);
