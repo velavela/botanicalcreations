@@ -34,6 +34,15 @@ img {
 
 /* TYPOGRAPHY */
 
+.logo-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  color: #F0D9FF;
+  font-weight: 400;
+  margin: 2em 0 2em 0;
+}
+
+
 .subtitle {
   font-family: 'Dancing Script', cursive;
   font-size: 2rem;
@@ -61,54 +70,6 @@ img {
 .home-about-para {
   font-family: 'Raleway', sans-serif;
   color: #FFF;
-}
-
-.jaf-h1 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 2.5rem;
-  font-weight: 400;
-  color: #F43B86;
-}
-
-
-.sw {
-  font-weight: 700;
-  display: block;
-  font-size: 2.5rem;
-}
-
-
-.mobile-hero-text {
-  display: none;
-  margin: 3em auto;
-}
-
-.botanical {
-  padding: 1.5em 6.5em 0 0;
-}
-
-.creations {
-  padding: 4em 3em 0 1.5em;
-}
-
-.desktop-hero-text {
-  font-weight: 900;
-  font-size: 8.5vw;
-
-}
-
-@media (max-width: 1200px) {
-  .mobile-hero-text {display: inline-block;}
-  .desktop-hero-text {display: none;}
-}
-
-
-
-
-@media (min-width:60rem) {
-  .subtitle {
-    font-size: 6rem;
-  }
 }
 
 
@@ -139,9 +100,6 @@ img {
   border: #F0D9FF;
 }
 
-@media (min-width: 60rem) {
-  .button {display: none;}
-}
 
 /* HEADER */
 
@@ -178,16 +136,6 @@ nav a:focus {
   color: #DDD;
 }
 
-@media (min-width:60rem) {
-  .logo {
-    float: left;
-  }
-
-  nav {
-    float: right;
-  }
-}
-
 
 /* HOME-HERO */
 
@@ -195,22 +143,35 @@ nav a:focus {
   background-image: url(images/heroimage.jpg);
   padding: 10em 0;
   width: 100vw;
-  height: 100vh;
+  height: 40vh;
   display: flex;
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #FFF;
 }
 
 
-@media (min-width: 60rem) {
-  .home-hero {
-    height: 100vh;
-    padding-top: 25vh;
+
+  .logo {
+    padding: 1.5em 0 .5em 0;
   }
+
+
+
+.subtitle {
+  margin-top: 3em;
+  margin-bottom: 0;
 }
+
+
+  .home-about-h1 {
+    font-size: 2.66rem;
+    padding: 0 .19em;
+    top: .3em;
+  }
+
 
 /* HOME-ABOUT */
 
@@ -231,63 +192,4 @@ nav a:focus {
   outline: 2px solid #F43B86;
   outline-offset: -3em;
   position: relative;
-}
-
-
-
-@media (max-width: 25rem) {
-
-  .logo {
-    padding: 1.5em 0 .5em 0;
-  }
-
-  .home-hero {
-    height: 45vh;
-}
-
-.subtitle {
-  margin-top: 3em;
-  margin-bottom: 0;
-}
-
-
-  .home-about-h1 {
-    font-size: 2.66rem;
-    padding: 0 .19em;
-    top: .3em;
-  }
-
-.home-about-textbox {
-}
-
-
-@media (min-width: 60rem) {
-  .home-about-h1 {
-    font-size: 3.3rem;
-    top: .1em;
-    left: 12.3rem;
-    transform: translateX();
-
-  }
-
-
-  .home-about {
-    background-image: url(images/purple.png);
-    padding-bottom: 10em;
-    background-repeat: no-repeat;
-    display: flex;
-    background-size: cover;
-    background-position: center;
-    margin-top: 15em;
-
-  }
-
-  .home-about-textbox {
-    width: 40%;
-    margin-left: -15%;
-    padding: 5.5em;
-    top: -7em;
-    text-align: left;
-
-  }
 }
